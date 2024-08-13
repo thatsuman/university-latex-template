@@ -1,0 +1,46 @@
+\documentclass{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{fancyhdr}
+\usepackage{graphicx}
+\usepackage{minted}
+\usepackage{hyperref}
+\usepackage{fontspec}
+
+% document settings start
+\geometry{a4paper, margin=0.9in}
+\graphicspath{{./outputs/}}
+\usemintedstyle{emacs}
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{Left Header}
+\rhead{Suman Mondal}
+\lfoot{\href{https://github.com/thatsuman/knucse-assignment}{GitHub}}
+\rfoot{Page \thepage}
+
+\hypersetup{
+colorlinks=true,
+linkcolor=blue,
+filecolor=magenta,
+urlcolor=blue,
+}
+\urlstyle{same}
+
+% \setmainfont{Comfortaa}
+\setmonofont{FantasqueSansMono Nerd Font}
+
+\input{./macro}
+% document settings end
+
+\begin{document}
+\input{./cover}
+\newpage
+\pagenumbering{roman}
+\tableofcontents
+\newpage
+\pagenumbering{arabic}
+\setcounter{page}{1}
+
+\section{The Saga of Suman Mondal}
+
+\end{document}
